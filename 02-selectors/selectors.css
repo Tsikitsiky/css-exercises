@@ -4,7 +4,7 @@
 }
 
 
-/* 2 = Select only table elements: type selector */
+/* 2 = Select only table elements: element selector */
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -17,23 +17,23 @@ table {
 }
 
 
-/* 4 = Select any `h1` element that is a descendent of the `header` element: descendant combinator */
+/* 4 = Select any `h1` element that is a descendent of the `header` element: descendent combinator/ element selector */
 header h1 {
   font-size: 4rem;
   margin-bottom: 0;
 }
 
 
-/* 5 = Select only the `ul` elements that are children of the `nav` element: child combinator */
-nav>ul {
+/* 5 = Select only the `ul` elements that are children of the `nav` element: child combinator or direct descendent */
+nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 
-/* 6 = Select only the first child paragraph within a `section` element:pseudo classes  */
-section p:first-child {
+/* 6 = Select only the first child paragraph within a `section` element:pseudo class/element/ child combinator */
+section > p:first-child {
   font-size: 1.5rem;
 }
 
@@ -49,13 +49,13 @@ h6 {
 }
 
 
-/* 8 = Select all anchors that are also links:pseudo classes */
+/* 8 = Select all anchors that are also links: link pseudo class/ element selector */
 a:link {
   text-decoration: underline;
 }
 
 
-/* 9 = Select any anchor that is hovered over with the mouse:pseudo classes */
+/* 9 = Select any anchor that is hovered over with the mouse:pseudo class/ element selector */
 a:hover {
   text-decoration: none;
 }
@@ -68,14 +68,15 @@ a:hover {
 }
 
 
-/* 11 = Select all paragraph elements that have a class value of `hidden`: combination, pseudo classes */
-p .hidden {
+/* 11 = Select all paragraph elements that have a class value of `hidden`: pseudo class */
+p.hidden {
   display: none;
 }
 
 
-/* 12 = Select all form elements that have a method attribute set to `POST`: attribute selectors */
-form [method=POST] {
+/* 12 = Select all form elements that have a method attribute set to `POST`: attribute selectors/element selector */
+form [method="POST"],
+[method="Post"] {
   box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 }
 
@@ -87,19 +88,19 @@ form [method=POST] {
 
 
 /* 14 = Select any sibling paragraph elements that are preceeded by an `h3`: general simbling combinator */
-h3~p {
+h3 ~ p {
   color: #66F;
 }
 
 
 /* 15 = Select any sibling paragraph elements that directly follow an `h3`: adjacent simbling combinator */
-h3+p {
+h3 + p {
   font-size: 1.5rem;
 }
 
 
 /* 16 = Select every cell within each odd table row: pseudo element */
-tr:nth-of-type(2n+1)>td {
+tr:nth-of-type(2n+1)>* {
   background-color: rgba(0,0,0,.1);
 }
 

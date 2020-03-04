@@ -6,3 +6,119 @@
   /* Property example with a value */
 
 }
+Font
+
+* {
+  /*font-family
+  It specifies the way how the text looks like.*/
+  font-family: cursive;
+}
+
+* {
+  /*font-size
+  It indicates the height of glyphs */
+  font-size: large;
+}
+
+* {
+  /*font-weight
+  It specifies the weight of glyphs, degree of blackness or thickness*/
+  font-weight: 800;
+}
+
+* {
+  /*font-style
+  It allows italic or oblique form*/
+  font-style: italic;
+}
+
+* {
+  /*line-height
+  It determines the block dimension of the content*/
+  line-height: 2;
+}
+
+* {
+  /*font-variant
+  It shows the variant representation of the font*/
+  font-variant: small-caps;
+}
+
+* {
+  /*font-stretch
+  It selects a normal or condensed face from the font*/
+  font-stretch: condensed;
+}
+
+* {
+  /*font-size-adjust
+  It preserves the readability of the text when the font is black*/
+  font-size-adjust: 5;
+}
+
+* {
+  /*font-synthesis
+  It controls the user agent to be allowed to synthesise bold or oblique font*/
+  font-synthesis: style;
+}
+* {
+  /*letter-spacing
+  It specifies the space between letters*/
+  letter-spacing: normal;
+}
+
+* {
+  /*word-spacing
+  It specifies additional spaces between words*/
+  word-spacing: unset;
+}
+
+* {
+  /*text-align
+  It describe how is the content aligned*/
+  text-align: end;
+}
+
+text-decoration
+
+* {
+  /*text-decoration-line
+  It specifies the line decoration*/
+  text-decoration-line: underline;
+}
+
+* {
+  /*text-decoration-style
+  It specifies the style of the line decorated*/
+  text-decoration-style: solid;
+}
+
+* {
+  /*text-decoration-color
+  It specifies the color of the line*/
+  text-decoration-color: teal;
+}
+
+* {
+  /*text-indent
+  It specifies the indention used in the content*/
+  text-indent: 2rem;
+}
+
+* {
+  /*text-transform
+  It controls whether the text is capital or lowercase*/
+  text-transform: capitalize;
+}
+
+* {
+  /*vertical-align
+  It affects the vertical positionnig of the content*/
+  vertical-align: 2rem;
+}
+
+* {
+  /*white-space
+  It controls white spaces and text wrap*/
+  white-space: pre;
+}

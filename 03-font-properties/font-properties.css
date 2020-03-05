@@ -23,7 +23,7 @@ Font
 * {
   /*font-weight
   It specifies the weight of glyphs, degree of blackness or thickness*/
-  font-weight: 800;
+  font-weight: 400;
 }
 
 * {
@@ -40,19 +40,19 @@ Font
 
 * {
   /*font-variant
-  It shows the variant representation of the font*/
+  It shows the variant representation of the font or optional features */
   font-variant: small-caps;
 }
 
 * {
   /*font-stretch
-  It selects a normal or condensed face from the font*/
+  It selects a normal or condensed(wide or expended) face from the font */
   font-stretch: condensed;
 }
 
 * {
   /*font-size-adjust
-  It preserves the readability of the text when the font is black*/
+  It preserves the readability of the text(lowercae or capital)*/
   font-size-adjust: 5;
 }
 
@@ -101,13 +101,13 @@ text-decoration
 
 * {
   /*text-indent
-  It specifies the indention used in the content*/
+  It specifies the indention(where the start of the text in the line) used in the content*/
   text-indent: 2rem;
 }
 
 * {
   /*text-transform
-  It controls whether the text is capital or lowercase*/
+  It transforms (sets) the text into capital or lowercase*/
   text-transform: capitalize;
 }
 
@@ -119,6 +119,6 @@ text-decoration
 
 * {
   /*white-space
-  It controls white spaces and text wrap*/
+  It controls white spaces and text wrap behaviour*/
   white-space: pre;
 }

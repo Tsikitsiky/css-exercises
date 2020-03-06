@@ -5,4 +5,73 @@
   */
     /* Property example with a value */
 
-  }
+    color
+
+-* {
+  /*
+   background-color
+  It sets the background color of an element
+  */
+  background-color: wheat;
+}
+
+-* {
+  /*
+  background-image
+  It sets the backround image for an element
+  */
+  background-image: image([src]);
+}
+
+-* {
+  /*
+  background-repeat
+  It sets how background images are repeated
+  */
+  background-repeat: repeat-x ;
+}
+
+-* {
+  /*
+  background-position
+  It specifies the initial position of a background image
+  */
+  background-position: center;
+}
+
+-* {
+  /*background-attachment
+  It sets the backround image to be fixed within the viewport or not
+  */
+  background-attachment: fixed;
+}
+
+-* {
+  /*
+  background-clip:
+  It sets where the background extends, it can be underneath its border box, padding boxs or content box
+  */
+  background-clip: content-box;
+}
+
+-* {
+  /* background-origin
+  It sets the backround's origin, it can be from the border start, inside the border or inside the padding
+  */
+  background-origin: border-box;
+}
+
+-* {
+  /*
+  background-size
+  It specifies the size of the element background image
+  */
+  background-size: 16px ;
+}
+
+-* {
+  /*box-shadow
+  It adds the shaddow effect around an element's frame
+  */
+  box-shadow: currentColor;
+}

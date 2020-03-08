@@ -5,7 +5,12 @@
   */
     /* Property example with a value */
 
-    color
+    * {
+      /*
+      color
+      It sets the color of the font*/
+      color: rgb(255,0,0);
+    }
 
 -* {
   /*

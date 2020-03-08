@@ -1,0 +1,45 @@
+.dory {
+  background-color: rgba(0,119,190,60%) ;
+  background-image:url("../images/coral-reef.png"),
+                  url("../images/bubble.png"),
+                  url("../images/crab.png");
+                  /*linear-gradient("../images/coral-reef.png"),
+                  repeating-linear-gradient(to bottom,rgb(135,206,235),rgba(0,119,190,60%));*/
+  background-position: center top, right ,left top;
+  background-repeat:repeat-y,no-repeat, repeat-y;
+  background-size:1000px, 200px, 300px;
+}
+
+.henry {
+  background-color: hsl(blue, 196,39% ,83%);
+  background-image:url("../images/grass-clump.png"),
+                  url("../images/grass-left.png"),
+                  url("../images/grass-tile.png");
+                  /*linear-gradient(../) ;*/
+
+  background-position: left bottom, bottom, center bottom ;
+  background-repeat:no-repeat ;
+  background-size:500px, 2000px, 1700px ;
+}
+
+/*.lu-seal {
+  background-color:hsl(white, 196,39% ,83%) ;
+  background-image:
+                  linear-gradient(../images/coral-reef.png) ;
+                   ;
+  background-position:  ;
+  background-repeat:no-repeat ;
+  background-size: ;
+}*/
+.lu-seal {
+  background-color:/*hsl(white, 196,39% ,83%), */rgba(0,119,190,60%) ;
+  background-image:url("../images/sun.png"),
+                  url("../images/beach-ball.png"),
+                  url("../images/palm.png"),
+                  url("../images/palm-2.png")
+                  /*linear-gradient("../images/coral-reef.png"),
+                  repeating-linear-gradient(to bottom,rgb(135,206,235),rgba(0,119,190,60))*/;
+  background-position: right, left bottom, left bottom, right bottom,bottom;
+  background-repeat: no-repeat;
+  background-size: 20%, 20%, 50%, 60%;
+}

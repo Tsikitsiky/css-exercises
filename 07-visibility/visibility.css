@@ -16,3 +16,33 @@
 
 */
 
+* {
+  /*
+    opacity
+    It defines how transparent an element is.
+  */
+opacity: 0.5;
+}
+
+  * {
+    /*
+      Display
+      It defines whether the element is treated as a block or inline element. If display is none, that means it is invisible.
+    */
+display: inline;
+  }
+
+    * {
+      /*
+        Visibility
+        It makes an element to be visible or not without changing the layout.
+      */
+      visibility: hidden;
+    }
+
+    Answers:
+    1/Opacity is inherited but background is only used to a specific element.
+
+    2/ With display none, the document behaves as if the the element does't exist whearas with visibility hidden, it is considered to be existing but hidden.
+
+    3/No, the default value of it is already visible.

@@ -1,25 +1,51 @@
-.dory {
+#dory {
   background-color: rgba(0,119,190,60%) ;
-  background-image:url("../images/coral-reef.png"),
-                  url("../images/bubble.png"),
-                  url("../images/crab.png");
-                  /*linear-gradient("../images/coral-reef.png"),
-                  repeating-linear-gradient(to bottom,rgb(135,206,235),rgba(0,119,190,60%));*/
-  background-position: center top, right ,left top;
-  background-repeat:repeat-y,no-repeat, repeat-y;
-  background-size:1000px, 200px, 300px;
+  background-image: url("../images/coral-reef.png"),
+                    url("../images/bubble.png"),
+                    url("../images/crab.png"),
+                    linear-gradient(180deg,rgb(135,206,235) 0%,
+                                          rgb(135,206,235) 10%,
+                                          rgba(0,119,190,60%) 10%,
+                                          rgba(0,119,190,60%) 60%,
+                                          #c2b280 60%,
+                                          #c2b280 100%);
+                    /**/
+  background-position: 90% 15%, /*coral*/
+                      95% 20%, /*bubble*/
+                      10% 95%, /*crab*/
+                      0% 0%; /*gradient*/
+  background-repeat:no-repeat, /*coral*/
+                    no-repeat, /*bubble*/
+                    no-repeat, /*crab*/
+                    no-repeat; /*gradient*/
+  background-size:1200px, /*coral*/
+                  200px, /*buble*/
+                  300px, /*crab*/
+                  100%; /*gradient*/
 }
 
-.henry {
-  background-color: hsl(blue, 196,39% ,83%);
-  background-image:url("../images/grass-clump.png"),
-                  url("../images/grass-left.png"),
-                  url("../images/grass-tile.png");
-                  /*linear-gradient(../) ;*/
-
-  background-position: left bottom, bottom, center bottom ;
-  background-repeat:no-repeat ;
-  background-size:500px, 2000px, 1700px ;
+#henry {
+  background-color: #fdfbd3;
+  background-image: url("../images/grass-clump.png"),
+                    url("../images/grass-left.png"),
+                    url("../images/grass-tile.png"),
+                    url("../images/sun.png"),
+                    linear-gradient(0deg,rgb(135,206,235) 50%, #fdfbd3 50%);
+  background-position:15% 75%,
+                      center,
+                      40% 50%,
+                      3% 5%,
+                      0% 0%;
+  background-repeat:no-repeat,
+                    repeat-x,
+                    repeat-x,
+                    no-repeat,
+                    no-repeat;
+  background-size:400px,
+                  1000px,
+                  1000px,
+                  10%,
+                  100%;
 }
 
 /*.lu-seal {
@@ -31,15 +57,30 @@
   background-repeat:no-repeat ;
   background-size: ;
 }*/
-.lu-seal {
+#lu-seal {
   background-color:/*hsl(white, 196,39% ,83%), */rgba(0,119,190,60%) ;
-  background-image:url("../images/sun.png"),
+  background-image:/*url("../images/sun.png"),*/
                   url("../images/beach-ball.png"),
                   url("../images/palm.png"),
-                  url("../images/palm-2.png")
-                  /*linear-gradient("../images/coral-reef.png"),
-                  repeating-linear-gradient(to bottom,rgb(135,206,235),rgba(0,119,190,60))*/;
-  background-position: right, left bottom, left bottom, right bottom,bottom;
-  background-repeat: no-repeat;
-  background-size: 20%, 20%, 50%, 60%;
+                  url("../images/palm-2.png"),
+                  linear-gradient(180deg, rgba(0,119,190,60%) 0%,
+                  rgba(0,119,190,60%) 50%,
+                  #c2b280 50%,
+                  #c2b280 90%,
+                  green 90%,
+                  green 100%);
+  background-position:
+                      20% 80%,
+                      left bottom,
+                      right bottom,
+                      50% 50%;
+  background-repeat:
+                    no-repeat,
+                    repeat-x,
+                    repeat-x;
+  background-size:
+                  20%,
+                  50%,
+                  60%,
+                  100%;
 }

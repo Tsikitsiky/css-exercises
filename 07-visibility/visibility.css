@@ -43,6 +43,6 @@ display: inline;
     Answers:
     1/Opacity is inherited but background is only used to a specific element.
 
-    2/ With display none, the document behaves as if the the element does't exist whearas with visibility hidden, it is considered to be existing but hidden.
+    2/ With display none, the document behaves as if the element does't exist whearas with visibility hidden, it is considered to be existing but hidden.
 
-    3/No, the default value of it is already visible.
+    3/The default value of it is already visible but the reason why we use it is to make sure that it will be visible.

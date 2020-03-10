@@ -1,0 +1,29 @@
+[href="#/about"],
+[href="#/contact"] {
+  visibility: hidden;
+}
+
+ [data-bg-color="yellow"],
+ [data-bg-color="blue"],
+ tr:nth-child(2),
+ span
+  {
+display: none;
+}
+
+span {
+  opacity: 0.5;
+}
+/*
+<table>
+        <tr>
+          <td rowspan="2" data-bg-color="white"><span>White</span></td>
+          <td data-bg-color="red"><span>Red</span></td>
+        </tr>
+        <tr>
+          <td data-bg-color="yellow"><span>Yellow</span></td>
+        </tr>
+        <tr>
+          <td data-bg-color="green"><span>Green</span></td>
+          <td data-bg-color="blue"><span>Blue</span></
+*/

@@ -1,5 +1,10 @@
+/*
 [href="#/about"],
 [href="#/contact"] {
+  visibility: hidden;
+}
+*/
+nav li:not(:first-child) {
   visibility: hidden;
 }
 

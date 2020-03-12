@@ -1,7 +1,40 @@
+  /*div {
+  border: black solid;
+  background-color: white;
+  width: 50px 100px 150px 200px;
+  padding: 30px;
+  margin: 10px;
+}
+*/
+
 * {
   /*
     Property name
     Property description
   */
-    /* Property example with a value */
+}
+   * {
+      /*
+    border: 2px;
+    margin: 2rem;
+    padding: 3rem;
+    display:inline block;
+    box-sizing: border-box;*/
+  }
+
+  html {
+    background-color: blanchedalmond;
+  }
+
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+  }
+
+  h2 {
+    font-family: cursive;
+  }
+
+  dt {
+    font-weight: bold;
   }

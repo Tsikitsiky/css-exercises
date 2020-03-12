@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="boxes.css">
+  </head>
+  <body>
+    <header>
+      <h1> Boxes</h1>
+    </header>
+    <main>
+      <section>
+        <h2>A short essay on what the Box Model is</h2>
+        <p>A Box Model is all you can see on a page. It is built by using CSS. There is two types of boxes in CSS, block boxes and inline boxes. A model box contain several parts: content box, padding box, border box and merging box wich all have its specific role. </p>
+      </section>
+      <section>
+        <h2>A diagram of the box model</h2>
+        <img src="diagram.png" alt="diagram">
+        <!--<div class="margin">Margin
+          <div id="border">Border
+            <div id="padding">Padding
+              <div id="content">Content
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+      </section>
+      <section>
+        <h2>Description 1</h2>
+        <dfn>
+          <dt>Content-box</dt>
+          <dd>It is the area where the content like text, image or video of the document are displayed. </dd>
+          <dt>Padding-box</dt>
+          <dd>It is sited around the content as a white space area.</dd>
+          <dt>Border-box</dt>
+          <dd>It wraps the padding box area and the content box</dd>
+        </dfn>
+      </section>
+      <section>
+        <h2>Description 2</h2>
+        <dt>Border</dt>
+        <dd>It can be used as a shorthand property by putting all values together. It is better to use the long hand properties; border width, border style and border color to make it more specific.</dd>
+        <dt>Margin</dt>
+        <dd>In longhand peoperties, margin is margin top, margin bottom, margin left and margin right. It can be used a shorthand or detailed as a longhand properties.</dd>
+        <dt>Padding</dt>
+        <dd>Similar to margin, it is a shorthand for padding top, bottom, left and right; can be used as shorthand and longhand.</dd>
+        <dt>Display</dt>
+        <dd>It decides whether an element is displayed or not and if displayed, where it is displayed.</dd>
+        <dt>Box-sizing</dt>
+        <dd>It calculates the width and height of an element. It also can adjust the behaviour of a content-box and a border-box</dd>
+      </section>
+      <section>
+        <h2>Answers</h2>
+        <ol>
+          <li>When two different margins of two different boxes collide, what we call collapsing margins happens and the bigger distance margin take the margin space.</li>
+          <li>The formula is the standard css box model. It differs from using box-sizing:content box because it is the default on browser.</li>
+          <li>display:inline-block allows to set width and height but dispaly inline doesn't.<br>
+          display inline respect top and bottom margins or paddings whereas inline block doesn't.<br>display:block, there is a line break after the element but there isn't with inline and inline block values.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

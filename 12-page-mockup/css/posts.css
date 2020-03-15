@@ -1,0 +1,36 @@
+main {
+  background-color: white;
+}
+
+ol {
+  list-style-type: none;
+}
+
+h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+ol li:first-of-type {
+  box-sizing: content-box;
+  border-bottom: black 1px solid;
+  width: 400px;
+  height: 230px;
+  text-align: center;
+}
+
+ol li:last-of-type {
+  box-sizing: content-box;
+  width: 600px;
+  height: 230px;
+  text-align: center;
+}
+
+ol small {
+  color: darkgray;
+  font-family: pupyrus ;
+}
+
+small a {
+color: black;
+}

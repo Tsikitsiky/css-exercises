@@ -1,0 +1,22 @@
+nav:first-of-type a {
+  color: white;
+  text-transform: uppercase;
+  position: top right;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  display: block;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  float: left;
+}
+
+

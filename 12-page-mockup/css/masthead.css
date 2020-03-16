@@ -7,6 +7,8 @@ main > header {
   padding-block-start: 18.4375rem;
   padding-block-end: 18.4375rem;
   background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 main > header h2 {

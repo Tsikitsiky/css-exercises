@@ -7,6 +7,9 @@
 /* The handling of links for the site nav */
 @import "nav.css";
 
+/* main header*/
+@import"masthead.css";
+
 /* Layout, and sizing of the post summaries */
 @import "posts.css";
 

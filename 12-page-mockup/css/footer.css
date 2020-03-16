@@ -1,22 +1,25 @@
-footer ul {
-  list-style-type: none;
+footer {
+  text-align: center;
+  padding-block-start: 6rem;
+  padding-block-end: 6rem;
 }
 
- footer li {
-  float: left;
-  position: center;
-  margin: 0;
+footer ul {
+  list-style-type: none;
+  margin: 2rem;
   padding: 0;
 }
 
-footer p {
-  font-size: 1rem;
-  position: center bottom;
-  margin-top: 5rem;
+ footer li {
+  display: inline;
 }
 
-footer img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+footer > p {
+  font-size: 1rem;
+  margin-top:0;
+}
+
+footer li:not(:first-child):not(:last-child) {
+  margin-inline-start: 2rem;
+  margin-inline-end: 2rem;
 }

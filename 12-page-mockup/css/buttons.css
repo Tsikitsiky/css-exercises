@@ -2,10 +2,11 @@
   background-color:/* rgb(0, 162, 255)*/rgb(64, 173, 224);
   display: inline-block;
   block-size: content-box;
-  width: 100px;
+  width: 120px;
   height: 5px;
-  text-align: center;
+  text-align: right;
   padding-bottom: 1rem;
-  position:right bottom;
+  color: white;
+  text-transform: uppercase;
 
 }

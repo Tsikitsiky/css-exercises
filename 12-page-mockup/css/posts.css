@@ -1,5 +1,10 @@
 main {
   background-color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 ol {
@@ -14,16 +19,20 @@ h3 {
 ol li:first-of-type {
   box-sizing: content-box;
   border-bottom: black 1px solid;
-  width: 400px;
+  width: 450px;
   height: 230px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ol li:last-of-type {
   box-sizing: content-box;
   width: 600px;
-  height: 230px;
+  height: 300px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ol small {

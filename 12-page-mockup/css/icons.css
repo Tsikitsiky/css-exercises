@@ -1,0 +1,29 @@
+footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*This element is most likely an anchor. We use the `href` of the key to the source of the background image `url()`*/
+.icon {
+  width: 79px;
+  height: 79px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.icon[href^="https://facebook"] {
+  background-image: url(../images/icon-facebook.png);
+}
+
+.icon[href^="https://twitter"] {
+  background-image: url(../images/icon-twitter.png);
+}
+
+.icon[href^="https://github"] {
+  background-image: url(../images/icon-github.png);
+}

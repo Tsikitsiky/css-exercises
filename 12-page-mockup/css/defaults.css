@@ -1,9 +1,9 @@
+html {
+  font-size: ;
+}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 1000px;
+  margin-inline-end: 0rem;
 }
 
-main {
-  border-bottom: black 1px solid;
-  padding-bottom: 3rem;
-}
+

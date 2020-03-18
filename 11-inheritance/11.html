@@ -52,16 +52,16 @@
             <li>word-wrap</li>
           </ul>
         </li>
-        <li>The difference between currentcolor and inherit keywords when used with color is that currentcolor is only used when there is an expected value but with inherit, the browser set it if there is not colour set </li>
+        <li>The difference between currentcolor and inherit keywords when used with color is that currentcolor is only used when there is an expected value i.e there is already a similar declaration set, but with inherit, the browser set it whether there is ir not a declaration similar to it already set. </li>
         <li>What they do:
           <ul>
-            <li>Revert: it resets the value of a property to its origin or inherited.
+            <li>Revert: it resets the value of a property to its original inherited value.
             </li>
             <li>Initial: it resets to the default value of an element.
             </li>
-            <li>Unset: it resets to the inherited value and the default value
+            <li>Unset: it resets to the inherited value and if not to the initial default value
         </li>
-        <li>There is no danger by using them unless you want to wipe everything at once</li>
+        <li>By using inherit, you may overuse it and break your work. By using revert and the others, be carefull in using your selector unless you break all your work</li>
         <li></li>
       </ul>
     </main>

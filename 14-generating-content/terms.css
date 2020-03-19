@@ -1,39 +1,39 @@
 body {
   width: 48rem;
-  counter-reset: section;
+  counter-reset: major-clause;
 }
 
 h3::before {
-  counter-increment: section;
-  content: "Section" counter(section) "." " ";
+  counter-increment: major-clause;
+  content: counter(major-clause) "." " ";
 }
 
 h3 {
-  counter-reset: h4;
+  counter-reset: clause;
 }
 
 h4::before {
-counter-increment: h4;
-content: counter(section) "."counter(h4) "." " ";
+counter-increment: clause;
+content: counter(major-clause) "."counter(clause) "." " ";
 }
 
 ol {
-  counter-reset: li;
+  counter-reset: list;
   list-style: none;
 }
 
 li::before {
-  counter-increment: li;
-  content: counter(section) "." counter(h4) "." counter(li, lower-alpha) "." " ";
+  counter-increment: list;
+  content: counter(major-clause) "." counter(clause) "." counter(list, lower-alpha) "." " ";
 }
 
 li > ol {
-  counter-reset: last;
+  counter-reset: nested;
 }
 
 li > ol > li::before {
-  counter-increment: last;
-  content:  counter(section) "." counter(h4) "." counter(li, lower-alpha) "." counter(last, lower-roman) "." " ";
+  counter-increment: nested;
+  content:  counter(major-clause) "." counter(clause) "." counter(list, lower-alpha) "." counter(nested, lower-roman) "." " ";
 }
 
 h2 {
@@ -54,7 +54,7 @@ h4 {
   /*
   We need the following numbering structure:
 
-    1. Major clause `<h3>` separated by `<section>`s
+    1. Major clause `<h3>` separated by `<major-clause>`s
       1.1. Clause (with a List) `<h4>` with a `<ol>` sibling
         a. List item `<li>`
         b. List item (with a List) `<li>` with a `<ol>` child
@@ -68,6 +68,6 @@ h4 {
       1.2. Clause `<h4>`
       …
       1.13. Clause `<h4>`
-    2. Major clause `<h3>` in a new `<section>`
+    2. Major clause `<h3>` in a new `<major-clause>`
     …
 */

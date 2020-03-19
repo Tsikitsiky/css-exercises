@@ -1,4 +1,57 @@
-/*
+body {
+  width: 48rem;
+  counter-reset: section;
+}
+
+h3::before {
+  counter-increment: section;
+  content: "Section" counter(section) "." " ";
+}
+
+h3 {
+  counter-reset: h4;
+}
+
+h4::before {
+counter-increment: h4;
+content: counter(section) "."counter(h4) "." " ";
+}
+
+ol {
+  counter-reset: li;
+  list-style: none;
+}
+
+li::before {
+  counter-increment: li;
+  content: counter(section) "." counter(h4) "." counter(li, lower-alpha) "." " ";
+}
+
+li > ol {
+  counter-reset: last;
+}
+
+li > ol > li::before {
+  counter-increment: last;
+  content:  counter(section) "." counter(h4) "." counter(li, lower-alpha) "." counter(last, lower-roman) "." " ";
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+
+  /*
   We need the following numbering structure:
 
     1. Major clause `<h3>` separated by `<section>`s

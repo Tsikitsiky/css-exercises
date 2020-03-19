@@ -5,5 +5,23 @@
 
 /* Only styles for printers please */
 @media print {
+  a [href]::after {
+    content: attr(href);
 
+  }
+  abbr [title] {
+    content: attr(title);
+  }
+
+  time [datetime] {
+    content: attr(datetime);
+  }
+
+  blockquote [cite] {
+    content: attr(cite);
+  }
+
+  img [alt] {
+    content: attr(alt);
+  }
 }

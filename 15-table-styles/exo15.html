@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Table styling</title>
+  <style>
+table{
+  border:1px solid;
+  table-layout: auto;
+}
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+ul {
+  display: table;
+}
+
+li {
+  display: table-row;
+}
+  </style>
+</head>
+<body>
+  <p>Table, border-spacing, border-collapse, caption-side and empty-cells are related to table. These are their default values:</p>
+  <table>
+  <tr>
+    <th>Properties</th>
+    <th>Values</th>
+  </tr>
+  <tr>
+    <td>table-layout</td>
+    <td> auto</td>
+  </tr>
+  <tr>
+    <td>border-spacing</td>
+    <td> 2px</td>
+  </tr>
+  <tr>
+    <td>border-collapse</td>
+    <td> separate</td>
+  </tr>
+  <tr>
+    <td>caption-side</td>
+    <td> top</td>
+  </tr>
+  <tr>
+    <td>empty-cells</td>
+    <td> show</td>
+  </tr>
+  </table>
+
+  <section>
+    <h2>Simulating HTML tables</h2>
+    <p>let's take a look at these display values and the HTML elements which correspond them.</p>
+    <ul>
+      <li>table = table</li>
+      <li>table-raw-group = tbody</li>
+      <li>table-header-group = thead</li>
+      <li>table-footer-group = tfoot</li>
+      <li>table-raw = tr</li>
+      <li>table-cell = td</li>
+      <li>table-column-group = colgroup</li>
+      <li>table-column = col</li>
+      <li>table-caption = caption</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Further research</h2>
+    <p>To make the border-spacing work, it require that the border-collapse value to be separate</p>
+    <p></p>
+    <p>The difference between table layout fixed and auto is with fixed the width of the cell are fixed but with auto it depends on the content.</p>
+    <p>No</p>
+    <p>Similar to the border-spacing, empty-cells doesn't work effectively unless border-collapse value is separate</p>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+display: table;
+width: 540px;
+padding: 0.5em;
+border: 1px black solid;
+}
+
+section {
+  display: table-row;
+}
+
+h2 {
+  display: table-cell;
+  text-align: center;
+  width: 180px;
+  vertical-align: middle;
+}
+
+section p {
+  display: table-cell;
+  width: 360px;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width:600px)

@@ -1,1 +1,30 @@
+#overflow_invisible .example {
+  overflow: hidden;
+}
+
+#overflow_scroll .example {
+  overflow: scroll;
+}
+
+#clipping_circle .example {
+  clip-path: circle(10% at 64% 25%);
+}
+
+#clipping_poly .example {
+  clip-path: polygon(60% 45%, 88% 40%, 85% 70%);
+}
+
+#overclip .example {
+  overflow: hidden;
+}
+#overclip img {
+  clip-path:circle(10% at 64% 25%);
+  overflow: auto;
+}
+
+#overflow_ellipsis .example {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 

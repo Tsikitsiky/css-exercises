@@ -50,7 +50,7 @@ div {
 
 - What are all the significant or interesting characteristics of this ruleset?
 ```
-the min-width if for the html whether the max-width applies to the viewport.
+the min-width is for the html whether the max-width applies to the viewport.
 ```
 - What is the implied `width` of a `div`?
 ```

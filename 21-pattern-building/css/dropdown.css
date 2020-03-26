@@ -1,0 +1,12 @@
+ul {
+display: none;
+}
+
+input[type=checkbox]:checked ~ .dropdown_contents > ul {
+  display: block
+}
+
+.dropdown_contents a {
+  text-decoration: none;
+}
+

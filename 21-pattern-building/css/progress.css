@@ -1,0 +1,35 @@
+section:last-of-type {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.progress_indicator li {
+  width: 25%;
+  float: left;
+  position: relative;
+  text-align: center;
+  color: #7d7d7d;
+}
+
+.progress_indicator li::before {
+  width: 30px;
+  height: 30px;
+  content: '1';
+  background-color: #7d7d7d;
+  border: 2px solid;
+  text-align: center;
+}
+
+.progress_indicator li:first-child:after {
+  content: none;
+}
+.progress_indicator li.active {
+  color: green;
+}
+.progress_indicator li.active:before {
+  border-color: #55b776;
+}
+.progress_indicator li.active + li:after {
+  background-color: #55b776;
+}

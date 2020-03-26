@@ -1,0 +1,54 @@
+.icon_left::before {
+  content: '';
+background-image: url("../icon-facebook.png");
+background-position: left;
+background-repeat: no-repeat;
+display: inline-block;
+width: 16px;
+height: 16px;
+border-radius: 15;
+background-size: contain;
+padding-right: 1rem;
+}
+
+.icon_right::after {
+  content: '';
+  background-image: url("../icon-facebook.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 15%;
+  background-size: contain;
+  padding-left: 1rem;
+}
+
+.icon_left {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.icon_right {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+a {
+  margin: 2rem;
+}

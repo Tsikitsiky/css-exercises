@@ -9,4 +9,3 @@ input[type=checkbox]:checked ~ .dropdown_contents > ul {
 .dropdown_contents a {
   text-decoration: none;
 }
-

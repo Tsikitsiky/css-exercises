@@ -1,0 +1,34 @@
+section:last-of-type .container {
+  position: relative;
+   width: 200px;
+  height: 200px;
+  border: 0.5px gray solid;
+}
+
+section:last-of-type .container .rect {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+section:last-of-type .container .circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+
+section:last-of-type .container .pipe {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 4;
+}
+
+section:last-of-type .container .bar {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+}

@@ -1,0 +1,53 @@
+section:first-of-type .container {
+  position: relative;
+   width: 200px;
+  height: 200px;
+  border: 1px black solid;
+}
+section:first-of-type .container .circle{
+position: absolute;
+top: 150px;
+right: 0;
+bottom: 0;
+left: 150px;
+width: 50px;
+height: 50px;
+}
+section:first-of-type .container .rect{
+  position: ;
+  top: ;
+  right: ;
+  bottom: ;
+  left: ;
+  width: 50px;
+  height: 50px;
+  }
+
+section:first-of-type .container .pipe{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    bottom: 0;
+    left: -2px;
+    width: 50px;
+    height: 50px;
+    }
+
+  section:first-of-type .container .bar{
+      position: absolute;
+      top: -3px;
+      right: 0;
+      bottom: 0;
+      left: 150;
+      width: 50px;
+      height: 50px;
+      }
+svg .circle {
+
+}
+
+`position`
+- `top`, `right`, `bottom`, and `left`
+- `width` and `height`
+- `overflow`
+- and `z-index`

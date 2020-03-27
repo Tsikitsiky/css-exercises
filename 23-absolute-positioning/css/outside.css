@@ -1,0 +1,47 @@
+section:nth-of-type(2) .container {
+  position: relative;
+   width: 200px;
+  height: 200px;
+  border: 1px black solid;
+overflow: hidden;
+}
+
+section:nth-of-type(2) .container .circle:first-of-type {
+position: absolute;
+top: -100px;
+right: 0;
+left: -100px;
+bottom: 0;
+width: 200px;
+height: 200px;
+}
+
+section:nth-of-type(2) .container .circle:nth-of-type(2) {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 100px;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  }
+
+  section:nth-of-type(2) .container .circle:nth-of-type(3) {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: -100px;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    }
+
+    section:nth-of-type(2) .container .circle:last-of-type {
+      position: absolute;
+      top: 100px;
+      right: 0;
+      left: 100px;
+      bottom: 0;
+      width: 200px;
+      height: 200px;
+      }

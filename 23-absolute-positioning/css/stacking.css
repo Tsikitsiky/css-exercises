@@ -2,7 +2,6 @@ section:last-of-type .container {
   position: relative;
    width: 200px;
   height: 200px;
-  border: 0.5px gray solid;
 }
 
 section:last-of-type .container .rect {

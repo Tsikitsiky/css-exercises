@@ -2,7 +2,6 @@ section:first-of-type .container {
   position: relative;
    width: 200px;
   height: 200px;
-  border: 1px black solid;
 }
 section:first-of-type .container .circle{
 position: absolute;

@@ -25,6 +25,13 @@ margin: 0;
 padding: 0;
 }
 
+@media (min-width: 104rem) {
+  body > nav {
+    right: 50%;
+    margin-right: -50;
+  }
+}
+
 
 
 

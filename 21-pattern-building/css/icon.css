@@ -3,12 +3,15 @@
 background-image: url("../icon-facebook.png");
 background-position: left;
 background-repeat: no-repeat;
-display: inline-block;
 width: 16px;
 height: 16px;
-border-radius: 15;
+border-radius: 50%;
 background-size: contain;
-padding-right: 1rem;
+position: absolute;
+top: 50%;
+left: 1rem;
+margin-top: -0.5rem;
+
 }
 
 .icon_right::after {
@@ -19,36 +22,30 @@ padding-right: 1rem;
   display: inline-block;
   width: 16px;
   height: 16px;
-  border-radius: 15%;
+  border-radius: 50%;
   background-size: contain;
-  padding-left: 1rem;
+  margin-left: 1rem;
+
 }
 
-.icon_left {
+
+.icon {
   background-color: #4CAF50;
   border: none;
   color: white;
   padding: 1rem;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   vertical-align: top;
   text-transform: uppercase;
+  border-radius: 0.125rem;
+  position: relative;
 }
 
-.icon_right {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
+
+.icon_left {
+  padding-left: 3rem;
+  position: relative;
   display: inline-block;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-a {
-  margin: 2rem;
 }

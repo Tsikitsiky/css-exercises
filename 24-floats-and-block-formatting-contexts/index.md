@@ -10,13 +10,38 @@ We need to know the following properties:
 - `clear`
 
 1. What are their default values?
+```
+`float:none`
+`clear:none`
+```
 1. What are the possible values for `clear`?
+```
+clear value can be left, right, both and none.
+```
 1. What is the rule associated with a floated item in terms of source order?
+```
+The element that will be floated must be put at first i.e before everything you have to put it.
+```
 1. Can you float other elements besides images?
+```
+Yes
+```
 1. Is there a way to create a two-column layout with floats?
+```
+Yes there is.
+```
 
 ## BFC (Block formatting context)
 
 1. Describe in your own words what BFC is all about.
+```
+Block formating context is a set of rules or methodology for how a container should contain its content. It creates a private container.
+```
 1. We can 'clear' a float by creating a block formatting context on the parent, this is achieved by putting a certain set of properties on the container. What are those properties?
+```
+Position, display, overflow.
+```
 1. Will you forget about Block Formatting Contexts tomorrow? :P
+```
+May be
+```

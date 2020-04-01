@@ -1,0 +1,12 @@
+section:first-of-type .container img {
+  float: left;
+  padding: 0.75rem;
+
+
+}
+section:first-of-type .container p:nth-of-type(2) {
+clear: left;
+}
+section:first-of-type .container .doctor_claw {
+float: right;
+}

@@ -1,0 +1,33 @@
+section:last-of-type .example header{
+  float: left;
+  line-height: 36px;
+  margin: 0;
+}
+
+section:last-of-type .example header h3 {
+  margin: 0;
+}
+
+.form_toolbar {
+  line-height: 36px;
+  margin-left: 30rem;
+}
+
+.form_row {
+margin: 1rem 0;
+}
+
+label {
+float: left;
+line-height: 39px;
+width: 9rem;
+text-align: right;
+}
+
+.field {
+margin-left: 10rem;
+}
+
+button[value="save"] {
+  margin-inline-start: 10rem;
+}

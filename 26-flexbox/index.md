@@ -1,4 +1,4 @@
-# CSS exercise 26: Flexbox
+  # CSS exercise 26: Flexbox
 
 Flexbox helps us align and distribute items within a container, along one direction (or main axis) at a time.
 
@@ -33,9 +33,34 @@ We're going to need to learn some terms or concepts too:
 With all that in mind, here are some questions you should be able to answer after your research:
 
 1. What is the order of property values in the shorthand `flex` property? i.e. Given… `flex: 2 1 auto`, what does the `2`, `1` and `auto` represent?
+```
+2 represents the flex grow
+
+1 represents the flex shrink
+
+auto represents the flex basis
+```
 1. What `flex-wrap` or `flex-flow` values do we need before we can use `align-content`?
+```
+Flex wrap= nowrap
+```
 1. How is `align-content` different to `align-items`?
+```
+align content manages the space between wrap and the around the items but align items controls the alignment of the items on the cross axis.
+```
 1. Which property overrides the other - the container's `align-items` or the flex item's `align-self`?
+```
+align-self overrides the align- items.
+```
 1. What other commonly-used box model property is similar to `flex-basis`?
+```
+min-width for row and min-height for column.
+```
 1. There are two ways to change the ordering of flex items within a flex container. One is done on each flex item by using the `order` property. The other can change the whole order of the flex items at the container level. What is that property or value?
+```
+flex-direction=raw-reverse/column-reverse
+```
 1. Let's say we wanted some space between each of our three flex items in a flex column. Name at least two possible ways to achieve this.
+```
+padding, margin, aling-content.
+```

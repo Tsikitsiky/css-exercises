@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Grid</title>
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-areas: ". first ."
+                           "second second second"
+                           "third . fourth"
+                           ". fifth ."
+                           "sixth sixth sixth";
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: 50px 50px 50px 50px 50px;
+      width: 100%;
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+
+    #first {
+      grid-area: first;
+      background-color: greenyellow;
+    }
+    #second {
+      grid-area: second;
+      background-color: burlywood;
+    }
+    #third {
+      grid-area: third;
+      background-color: cyan;
+    }
+    #fourth {
+      grid-area: fourth;
+      background-color: darkkhaki;
+    }
+    #fifth {
+      grid-area: fifth;
+      background-color: darkseagreen;
+    }
+    #sixth {
+      grid-area: sixth;
+      background-color: gold;
+    }
+  </style>
+</head>
+<body>
+  <section class="wrapper">
+    <div id="first">1- Auto</div>
+    <div id="second">2- Flexbox only controls the layout by row or by column whereas grid controls both</div>
+    <div id="third">3- If the layout I need is only for row or column, I would use flexbox</div>
+    <div id="fourth">4- Because I need to control both row and column, I would use grid rather than flexbox because it is the one which does that</div>
+    <div id="fifth">5- It is better to use repeat() function</div>
+    <div id="sixth">6- Using minmax function</div>
+  </section>
+
+</body>
+</html>

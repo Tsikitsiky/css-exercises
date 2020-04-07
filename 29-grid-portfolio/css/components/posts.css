@@ -1,5 +1,13 @@
+.heading_important {
+  margin-inline-start: 160px;
+}
 .post {
-
+  display: grid;
+  grid-template-areas: "blank header header header header header"
+                       "foot content content content content content";
+  grid-template-columns: repeat(6, 145px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
 }
 
 .post a {
@@ -7,11 +15,51 @@
 }
 
 .post header {
+grid-area: header;
+}
+.post footer {
+  margin-block-start: 3rem;
+  grid-area: foot;
+  display: grid;
+  grid-template-rows: repeat(3,50px);
 
 }
-
 .post_content {
+  grid-area: content;
+}
+/*
+.post_content {
+display: grid;
+grid-template-columns: repeat(5, 145px);
+grid-template-rows: 145px 450px 145px;
+}
+.post_content p:first-of-type {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
 
+.post_content p:nth-last-of-type(2) {
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+
+}
+.post_content p:nth-last-of-type(3) {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+}
+.post_content p:nth-last-of-type(4) {
+  grid-column: 2/6;
+  grid-row: 5/6;
+}
+}
+
+.post footer {
+  grid-column: 1/2;
+
+}
 }
 
 /* This element doubles as the post meta block. Links, metadata, etc */

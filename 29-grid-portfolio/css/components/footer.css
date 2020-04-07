@@ -8,3 +8,10 @@ body > footer {
 body > footer a {
   color: #fff;
 }
+
+footer p:last-of-type{
+float: right;
+margin-top: -2rem;
+}
+
+

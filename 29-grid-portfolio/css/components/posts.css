@@ -26,40 +26,17 @@ margin-top: 1rem;
 .post_content {
   grid-area: content;
 }
-/*
-.post_content {
-display: grid;
-grid-template-columns: repeat(5, 145px);
-grid-template-rows: 145px 450px 145px;
-}
-.post_content p:first-of-type {
-  grid-column: 1/6;
-  grid-row: 1/2;
+
+.post:nth-of-type(2n) .image_half {
+  float: left;
+  margin-inline-end: 15px;
 }
 
-.post_content p:nth-last-of-type(2) {
-  grid-column: 4/6;
-  grid-row: 2/3;
+.post:nth-of-type(2n+1) .image_half {
+  float: right;
+  margin-inline-start: 15px;
 }
 
-}
-.post_content p:nth-last-of-type(3) {
-  grid-column: 2/4;
-  grid-row: 2/3;
-}
-
-}
-.post_content p:nth-last-of-type(4) {
-  grid-column: 2/6;
-  grid-row: 5/6;
-}
-}
-
-.post footer {
-  grid-column: 1/2;
-
-}
-}
 
 /* This element doubles as the post meta block. Links, metadata, etc */
 .post footer {

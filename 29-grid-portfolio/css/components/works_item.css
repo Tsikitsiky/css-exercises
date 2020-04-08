@@ -21,7 +21,10 @@ margin-block-start: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 16px 16px 16px 16px;
+  grid-column-gap: 15px;
+  margin-inline-start: -14px;
 }
 
 .works_item_navigation a {

@@ -4,10 +4,11 @@
 .post {
   display: grid;
   grid-template-areas: "blank header header header header header"
-                       "foot content content content content content";
+                       "footer content content content content content";
   grid-template-columns: repeat(6, 145px);
   grid-column-gap: 15px;
   column-gap: 15px;
+  grid-row-gap: 10px;
 }
 
 .post a {
@@ -18,10 +19,8 @@
 grid-area: header;
 }
 .post footer {
-  margin-block-start: 3rem;
-  grid-area: foot;
-  display: grid;
-  grid-template-rows: repeat(3,50px);
+  grid-area: footer;
+margin-top: 1rem;
 
 }
 .post_content {

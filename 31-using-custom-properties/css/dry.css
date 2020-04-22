@@ -1,15 +1,17 @@
-
+:root {
+  --base-unit: 10;
+}
 
 #dry .grid {
   display: inline-grid;
-  grid-template-columns: repeat(10, 20px);
+  grid-template-columns: repeat(var(--base-unit), 20px);
 }
 
 #dry a {
   display: block;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: calc(var(--base-unit)*2px);
+  height: calc(var(--base-unit)*2px);
   background-color: rgb(63, 63, 63);
   transition: background-color 1s;
   counter-increment: item;
@@ -24,11 +26,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
+  width: calc(var(--base-unit)*2px);
   text-align: center;
-  font-size: 10px;
-  line-height: 20px;
-  font-weight: 700;
+  font-size: calc(var(--base-unit)*1px);
+  line-height: calc(var(--base-unit)*2px);
+  font-weight: calc(var(--base-unit)*7);
   color: rgb(63, 63, 63);
   transition: color 1s;
 }

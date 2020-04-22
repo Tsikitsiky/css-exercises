@@ -11,7 +11,7 @@ We have to use double hyphen to define a Custom Property name.
 ```
 1. What characters can't we use in a Custom Property name?
 ```
-For the sake of clarity and readability, stick to alphanumeric names.
+Space and period (full stop)
 ```
 1. What possible values can we assign to a new Custom Property?
 ```
@@ -23,15 +23,15 @@ If the use of the property is globally across the html, it is useful to create t
 ```
 1. After we've defined a new Custom Property, how can we recall or use that Custom Property? What function do we use?
 ```
-We can use the CP by putting `var` function in front of the value.
+We can use the CP by putting `var` function .
 ```
 1. There are several ways to override or change a Custom Property. Can you name at least 3?
 ```
-set a new one, nesting, using style property
+set a new one, use @media querry,...
 ```
 1. Why are Custom Properties useful?
 ```
-Custum Properties are useful because it makes your css simpler and easy to understand.
+Custum Properties are useful because it reduces repetition, makes you write less code and you use one point of control.
 ```
 1. What is the only aspect (or part) of CSS syntax that we can use Custom Properties for?
 ```

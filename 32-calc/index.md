@@ -8,7 +8,7 @@ Here are some questions you should try answer through your research:
 ```
 It supports these following values: lenght, frequence, angle, time, percentage, number and integer.
 ```
-1. How can we control the mathematical order of operation (PEDMAS / BODMAS) in the function, so that something like `calc(2 + 3 * 4)` doesn't equal `20`, when it is instead meant to equal `14`?
+1.How can we adjustthis function `calc(2 +3 * 4)` so that it equals `20`? Hint: Apply the rules in PEDMAS / BODMAS.
 ```
 Calc function uses the rule of operator precedence to deal with it(division and multiplication first), if you want to specify or change the order of the calculation use brackets.
 ```

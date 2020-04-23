@@ -8,15 +8,11 @@
 
   This would get crazy if I had to write out each and every anchor within each row, setting the unique `hsla()` per anchor.
 */
-/*.table {
+:root {
   --hue: 36deg;
   --saturation: 100%;
   --lightness: 50%;
   --alpha:0.1;
-}
-
-.row a {
-  background-color: hsla(var(--hue), var(--saturation), var(--lightness), var(--alpha));
 }
 
  .row a:first-of-type {
@@ -24,33 +20,37 @@
 }
 
 .row a:nth-of-type(2) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*2)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*2));
 }
 
 .row a:nth-of-type(3) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*3)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*3));
 }
 
 .row a:nth-of-type(4) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*4)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*4));
+}
+
+.row a:nth-of-type(5) {
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*5));
 }
 
 .row a:nth-of-type(6) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*6)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*6));
 }
 
 .row a:nth-of-type(7) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*7)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*7));
 }
 
 .row a:nth-of-type(8) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*8)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*8));
 }
 .row a:nth-of-type(9) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*9)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*9));
 }
 .row a:nth-of-type(10) {
-  background-color: hsla((var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*10)));
+  background-color: hsla(var(--hue), var(--saturation), var(--lightness), calc(var(--alpha)*10));
 }
 
 .row:first-of-type {
@@ -58,35 +58,40 @@
 }
 
 .row:nth-of-type(2) {
-  background-color: hsla(calc((var(--hue)*2)), var(--saturation), var(--lightness), var(--alpha));
+  background-color: hsla(calc(var(--hue)*2), var(--saturation), var(--lightness), var(--alpha));
 }
 
 .row:nth-of-type(3) {
-  background-color: hsla(calc((var(--hue)*3)), var(--saturation), var(--lightness), var(--alpha));
+  background-color: hsla(calc(var(--hue)*3), var(--saturation), var(--lightness), var(--alpha));
 }
 
 .row:nth-of-type(4) {
-  background-color: hsla(calc((var(--hue)*4)), var(--saturation), var(--lightness), var(--alpha));
+  background-color: hsla(calc(var(--hue)*4), var(--saturation), var(--lightness), var(--alpha));
+}
+
+.row:nth-of-type(5) {
+  background-color: hsla(calc(var(--hue)*5), var(--saturation), var(--lightness), var(--alpha));
 }
 
 .row:nth-of-type(6) {
-  background-color: hsla(calc((var(--hue)*6)), var(--saturation), var(--lightness), var(--alpha));
+  background-color: hsla(calc(var(--hue)*6), var(--saturation), var(--lightness), var(--alpha));
 }
 
 .row:nth-of-type(7) {
-  background-color: hsla(calc((var(--hue)*7)), var(--saturation), var(--lightness), var(--alpha));
+  background-color: hsla(calc(var(--hue)*7), var(--saturation), var(--lightness), var(--alpha));
 }
 
 .row:nth-of-type(8) {
-  background-color: hsla(calc((var(--hue)*8)), var(--saturation), var(--lightness), var(--alpha));
+  background-color: hsla(calc(var(--hue)*8), var(--saturation), var(--lightness), var(--alpha));
 }
 .row:nth-of-type(9) {
-  background-color: hsla(calc((var(--hue)*9)), var(--saturation), var(--lightness), var(--alpha));
+  background-color: hsla(calc(var(--hue)*9), var(--saturation), var(--lightness), var(--alpha));
 }
 .row:nth-of-type(10) {
   background-color: hsla (calc(var(--hue)*10), var(--saturation), var(--lightness),var(--alpha));
 }
-*/
+
+/*
 :root {
   --base-hue: 36deg;
   --base-alpha: 0.1;

@@ -14,7 +14,7 @@ Calc function uses the rule of operator precedence to deal with it(division and 
 ```
 1. Can we use a `calc()` function to convert one type of unit to another type of unit?
 ```
-Yes
+No
 ```
 1. If we want to convert a unitless number to a unit value, what do we have to do?
 ```
@@ -22,7 +22,7 @@ We multiply that unitless number to 1unit of the unit needed.
 ```
 1. Why do the *plus* and *minus* operators inside the function need spaces around them?
 ```
-Without space, the browser treates the operator as invalid.
+Without space, the browser treates the operator as invalid because it takes as if it is a negative or positive number.
 ```
 1. How can we convert a value into a negative value?
 ```
@@ -30,5 +30,5 @@ By multiplying it by -1
 ```
 1. Can the `calc()` function work with colour values? e.g. a light red plus a light red should equal a darker red.
 ```
-Yes, rgb
+No
 ```

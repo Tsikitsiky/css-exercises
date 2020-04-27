@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Transition</title>
+  <style>
+    body {
+      background-color: green;
+      position: relative;
+transition-timing-function: ease ;
+      transform: scale(5s);
+    }
+    p {
+      background-color: white;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 200px;
+      left: 20px;
+    }
+    div {
+      border: white 1px solid;
+      width: 10rem;
+      height: 30rem;
+      position: absolute;
+      top: 20%;
+      left: 90%;
+    }
+    button:hover + p {
+
+left: 100%;
+    }
+  </style>
+</head>
+<body>
+  <button>Start</button>
+  <p></p>
+  <div></div>
+</body>
+</html>
+
+
+
+

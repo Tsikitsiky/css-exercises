@@ -6,9 +6,9 @@
   --max-scene-width: 1000;
   --wheel-radius: calc(var(--wheel-diameter) / 2);
   --pi: 22/7;
-  --circonference: calc(var(--wheel-diameter)*var(--pi));
+  --circomference: calc(var(--wheel-diameter)*var(--pi));
   --max-travel-dist: var(--max-scene-width);
-  --rotations: calc(var(--max-scene-width) / var(--circonference));
+  --rotations: calc(var(--max-scene-width) / var(--circomference));
   --rotation-in-deg:calc(var(--rotations) * 360deg);
 }
 

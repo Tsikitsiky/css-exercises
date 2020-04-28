@@ -13,6 +13,7 @@
   position: relative;
   overflow: hidden;
   max-width: 1000px;
+
 }
 
 /*
@@ -21,6 +22,9 @@
 */
 .scene:hover .wheel {
   left: 100%;
+  transition-duration: 5s;
+  transform: rotate(360deg);
+  transition-timing-function: ease-in ;
 }
 
 /* Wheel setup */
@@ -34,6 +38,9 @@
   height: var(--wheel-diameter);
   width: var(--wheel-diameter);
   position: relative;
+  transition-duration: 5s;
+  transform: rotate(-360deg);
+  transition-timing-function: ease-in ;
 }
 
 .spoke {

@@ -41,7 +41,9 @@
   min-width: 200px;
   transition: transform .2s ease-in;
   border-left: #aaa solid 1px;
-transform: translateX(100%);
+/*transform: translateX(100%);*/
+transform: scale(0);
+transform-origin: right;
 }
 
 .user-interface nav ul {
@@ -61,5 +63,6 @@ transform: translateX(100%);
 }
 
 .user-interface :checked ~ nav {
-transform: translateX(0);
+/*transform: translateX(0);*/
+transform: scale(1);
 }

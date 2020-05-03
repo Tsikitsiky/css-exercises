@@ -4,7 +4,9 @@
   --glow: radial-gradient(rgba(var(--white-rgb),0.75) 0%, rgba(var(--white-rgb),0.2) 50%, rgba(var(--white-rgb),0.01) 100%);
   --luna-size: 10px;
   --earth-size: 20px;
+  --saturn-size: 30px;
   --earth-system-size: 120px;
+  --saturn-system: 250px;
   --sun-size: 50px;
   --solar-system-size: 320px;
   --simulated-year: 36.525s;
@@ -45,9 +47,14 @@
 #earth-system {
   width: var(--earth-system-size);
   height: var(--earth-system-size);
-  transform: translate(80%, -50%);
+  transform: translate(81%, -50%);
 }
 
+#saturn-system {
+  width: var(--saturn-system-size);
+  height: var(--saturn-system-size);
+  transform: translate(80%, -50%);
+}
 #earth {
   width: var(--earth-size);
   height: var(--earth-size);
@@ -57,6 +64,13 @@
 
 }
 
+#saturn {
+  width: var(--saturn-size);
+  height: var(--saturn-size);
+  background-color: whitesmoke;
+  background-image: var(--sphere-lighting);
+  background-repeat: no-repeat;
+}
 #luna {
   background-color: #ccc;
   width: var(--luna-size);
@@ -78,14 +92,16 @@ transform: translate(55px);
 }
 
 .scene:hover #earth-system {
-  transform: translate(80%, -50%) rotate(12turn);
+  transform: translate(81%, -50%) rotate(12turn);
 }
 
 .scene:hover #earth {
-  transform-origin: left center;
-
+  transform: translate(-50%, -50%) rotate(-12turn);
+  /*transform-origin: left center;*/
 }
 
 .scene:hover #luna {
-  transform-origin: left center;
+  transform: translate(55px) rotate(-12turn);
+ /* transform: translateX(55px) rotate(12turn);
+ /* transform-origin: -56 50%;*/
 }

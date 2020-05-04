@@ -57,7 +57,7 @@
     var(--white-disc);
   background-position:
     50% 50%;
-    transform: rotateY(0deg) translateZ(125px);
+    transform: translateZ(125px);
 }
 
 #face-2 {
@@ -127,7 +127,7 @@
     80% 20%,
     80% 50%,
     80% 80%;
-    transform: rotateY(-180deg) translateZ(125px);
+    transform: translateZ(-125px);
 }
 
 #dice-scene label {

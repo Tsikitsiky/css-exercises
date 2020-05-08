@@ -22,5 +22,66 @@
   background-position:
     50% -25px,
     50% 50%;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
+  animation-name: ball;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: ;
+  overflow: hidden;
 }
+
+@keyframes ball {
+  0% {
+    top: 0;
+    left: var(--ball-diameter);
+    transition-timing-function: ease-in;
+  }
+  24% {
+    top: 82%;
+    left: var(--ball-diameter);
+    transform: scale(1);
+
+  }
+  25% {
+    top: 83%;
+    left: var(--ball-diameter);
+transform: scale(1.1, 0.9);
+  }
+  26% {
+    top: 82%;
+    left: var(--ball-diameter);
+    transform: scale(1);
+  }
+  50% {
+    top: 20%;
+    left: 170px;
+
+  }
+  74% {
+    top: 82%;
+    left: 190px;
+    transform: scale(1);
+
+  }
+  75% {
+    top: 83%;
+    left: 190px;
+transform: scale(1.2);
+  }
+  76% {
+    top: 82%;
+    left: 190px;
+    transform: scale(1);
+  }
+  90% {
+    top: 60%;
+    left: 200px;
+    transform: ;
+  }
+  100% {
+    top: 100%;
+    left: 250px;
+
+  }
+}
+

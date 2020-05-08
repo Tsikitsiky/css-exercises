@@ -88,6 +88,8 @@
   height: 200px;
   width: 370px;
   z-index: calc(var(--middle-z-index) + 1);
+  animation-name: cutting;
+  animation-duration: 5s;
 }
 
 #scissors-pivot {
@@ -102,6 +104,7 @@
   margin-inline-start: var(--negative-pivot-radius);
   z-index: 10;
   background-color: rgba(0,0,0,.5);
+
 }
 
 #scissors-top {
@@ -110,6 +113,8 @@
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 73%;
   transform: rotate(-15deg);
+  animation-name: top;
+  animation-duration: 5s;
 }
 
 #blade-top {
@@ -129,6 +134,7 @@
 #handle-bottom::after {
   top: calc(var(--handle-diameter) / 2);
   margin-block-start: calc(var(--handle-connect-thickness) / -2);
+
 }
 
 #scissors-bottom {
@@ -137,6 +143,8 @@
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 27%;
   transform: rotate(15deg);
+  animation-name: bottom;
+  animation-duration: 5s;
 }
 
 #blade-bottom {
@@ -166,6 +174,10 @@
   z-index: calc(var(--middle-z-index) - 1);
   transform-origin: 50% 100%;
   transform: translateZ(100px) rotateX(15deg);
+  animation-name: papercut;
+  animation-duration: 5s;
+  animation-delay: 3s;
+
 }
 
 #paper-uncut {
@@ -175,6 +187,7 @@
   transform: translateZ(100px) rotateX(15deg);
   border-block-start: 1px dashed #ccc;
   z-index: calc(var(--middle-z-index) + 1);
+
 }
 
 /* Debug setup */
@@ -186,3 +199,84 @@
 .debug {outline-color: blue;}
 .debug #scissor-top {outline-color: red;}
 .debug #scissor-bottom {outline-color: green;}
+
+@keyframes cutting {
+  0% {
+left: -100%;
+  }
+
+  100% {
+    left: 80%;
+  }
+}
+@keyframes papercut {
+  0% {
+    top: 49px;
+    height: 150px;
+    transform-origin: 50% 0;
+}
+100% {
+    top: 30px;
+    height: 150px;
+    transform-origin: right bottom;
+    transform: rotateY(20deg);
+}
+}
+@keyframes top {
+  0% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(0deg);
+  }
+  30% {
+    transform: rotateZ(-15deg);
+  }
+  40% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-15deg);
+  }
+  60% {
+    transform: rotateZ(0deg);
+  }
+  70% {
+    transform: rotateZ(-15deg);
+  }
+  80% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-15deg);
+  }
+}
+@keyframes bottom {
+  0% {
+    transform: rotateZ(15deg);
+  }
+  20% {
+    transform: rotateZ(0deg);
+  }
+  30% {
+    transform: rotateZ(15deg);
+  }
+  40% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(15deg);
+  }
+  60% {
+    transform: rotateZ(0deg);
+  }
+  70%{
+    transform: rotateZ(15deg);
+  }
+  80% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(15deg);
+  }
+}

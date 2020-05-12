@@ -17,7 +17,7 @@ It is the combination of `blur` and `thickness` which creates a hard-edge shadow
 ```
 1. Is it possible to create a shadow on a circular element? What about a polygon?
 ```
-It is possible when using `border-radius` but `clip-path` not.
+It is possible when using `border-radius` but `clip-path` not as it can be polygone or ellipse.
 ```
 1. Is it possible to create multiple shadows on the same element?
 ```
